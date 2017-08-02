@@ -39,7 +39,7 @@ exports.default = {
   }
 };
 if (module.exports.__esModule) module.exports = module.exports.default
-;(typeof module.exports === "function"? module.exports.options: module.exports).template = "<div><label class=\"uk-margin-right uk-margin-bottom uk-display-inline-block\" v-for=\"tag in tags\"><input type=checkbox value=\"{{ tag.value }}\" v-model=model.tags class=uk-margin-small-right> {{ tag.name }}</label></div>"
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "<div><label class=\"uk-margin-right uk-margin-bottom uk-display-inline-block\" v-for=\"tag in tags\"><input type=checkbox v-bind:value=tag.name v-model=model.tags class=uk-margin-small-right> {{ tag.name }}</label></div>"
 
 },{}],2:[function(require,module,exports){
 'use strict';

@@ -1,7 +1,7 @@
 <template>
   <div>
     <label class="uk-margin-right uk-margin-bottom uk-display-inline-block" v-for="tag in tags">
-      <input type="checkbox" value="{{ tag.value }}" v-model="model.tags" class="uk-margin-small-right">
+      <input type="checkbox" v-bind:value="tag.name" v-model="model.tags" class="uk-margin-small-right">
       {{ tag.name }}
     </label>
   </div>
